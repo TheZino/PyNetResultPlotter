@@ -4,9 +4,7 @@ Python tool for plotting logs from CNN trainings
 - VGG(PERCEPTUAL) and MSE Losses
 - PSNR Value
 - SSIM Value
-
-For Adversarial plot
-- D2x and D4x Losses
+- D2x and D4x Losses (For GAN training)
 
 ## Input Data Format
 
