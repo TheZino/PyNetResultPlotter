@@ -21,14 +21,14 @@ with open(file) as f:
 	reader = csv.reader(f)
 	for row in reader:
 		#print(row)
-		vgg_loss.append(row[1])
-		mse_loss.append(row[2])
+		vgg_loss.append(float(row[1]))
+		mse_loss.append(float(row[2]))
 
-		adv_D4x.append(row[3])
-		adv_D2x.append(row[4])
+		adv_D4x.append(float(row[3]))
+		adv_D2x.append(float(row[4]))
 
-		psnr.append(row[5])
-		ssim.append(row[6])
+		psnr.append(float(row[5]))
+		ssim.append(float(row[6]))
 
 loss_min_value = min(vgg_loss)
 
@@ -47,7 +47,7 @@ index_ssim = ssim.index(ssim_max_value)
 
 
 plt.figure(file + " Adversarial Loss")
-plt.plot(adv_D4x, label="D4x loss")
+a1 = plt.plot(adv_D4x, label="D4x loss")
 plt.plot(adv_D2x, label="D2x loss")
 plt.legend()
 plt.ylabel('loss')

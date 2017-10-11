@@ -19,11 +19,11 @@ with open(file) as f:
     reader = csv.reader(f)
     for row in reader:
         #print(row)
-        vgg_loss.append(row[1])
-        mse_loss.append(row[2])
+        vgg_loss.append(float(row[1]))
+        mse_loss.append(float(row[2]))
 
-        psnr.append(row[3])
-        ssim.append(row[4])
+        psnr.append(float(row[3]))
+        ssim.append(float(row[4]))
 
 loss_min_value = min(vgg_loss)
 
