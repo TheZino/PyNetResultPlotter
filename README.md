@@ -1,7 +1,7 @@
 # PyNetResultPlotter
 Python tool for plotting logs from CNN trainings
 
-- VGG(PERCEPTUAL) and MSE Losses
+- VGG (PERCEPTUAL) and MSE Losses
 - PSNR Value
 - SSIM Value
 - D2x and D4x Losses (For GAN training)
